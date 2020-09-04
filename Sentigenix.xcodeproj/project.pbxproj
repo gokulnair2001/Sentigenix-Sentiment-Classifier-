@@ -3,27 +3,90 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55042F402502CF97003BB52F /* Haptic Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55042F3F2502CF97003BB52F /* Haptic Feedback.swift */; };
 		55F9BEBE2501EDC100E2EE21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BEBD2501EDC100E2EE21 /* AppDelegate.swift */; };
 		55F9BEC02501EDC100E2EE21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BEBF2501EDC100E2EE21 /* SceneDelegate.swift */; };
-		55F9BEC22501EDC100E2EE21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BEC12501EDC100E2EE21 /* ViewController.swift */; };
+		55F9BEC22501EDC100E2EE21 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BEC12501EDC100E2EE21 /* MainViewController.swift */; };
 		55F9BEC52501EDC100E2EE21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F9BEC32501EDC100E2EE21 /* Main.storyboard */; };
 		55F9BEC72501EDC200E2EE21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F9BEC62501EDC200E2EE21 /* Assets.xcassets */; };
 		55F9BECA2501EDC200E2EE21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F9BEC82501EDC200E2EE21 /* LaunchScreen.storyboard */; };
+		55F9BED225021F3400E2EE21 /* TweetSentimentIdentifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 55F9BED125021F3400E2EE21 /* TweetSentimentIdentifier.mlmodel */; };
+		55F9BEEB25024B5200E2EE21 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F9BEE125024B1800E2EE21 /* SwifteriOS.framework */; };
+		55F9BEEC25024B5200E2EE21 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55F9BEE125024B1800E2EE21 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88ECCA27CAE9F4F7BD63879E /* Pods_Sentigenix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454A7224E314EBF1CAD680D1 /* Pods_Sentigenix.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55F9BEE025024B1800E2EE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		55F9BEE225024B1800E2EE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		55F9BEE425024B1800E2EE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		55F9BEE625024B1800E2EE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		55F9BEE825024B1800E2EE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55F9BEED25024B5200E2EE21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55F9BEEC25024B5200E2EE21 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		454A7224E314EBF1CAD680D1 /* Pods_Sentigenix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sentigenix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55042F3F2502CF97003BB52F /* Haptic Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Haptic Feedback.swift"; sourceTree = "<group>"; };
 		55F9BEBA2501EDC100E2EE21 /* Sentigenix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sentigenix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F9BEBD2501EDC100E2EE21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55F9BEBF2501EDC100E2EE21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55F9BEC12501EDC100E2EE21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55F9BEC12501EDC100E2EE21 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		55F9BEC42501EDC100E2EE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F9BEC62501EDC200E2EE21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F9BEC92501EDC200E2EE21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F9BECB2501EDC200E2EE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F9BED125021F3400E2EE21 /* TweetSentimentIdentifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentIdentifier.mlmodel; sourceTree = "<group>"; };
+		55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		8B60EA2E17ECF1E49B0960F0 /* Pods-Sentigenix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentigenix.debug.xcconfig"; path = "Target Support Files/Pods-Sentigenix/Pods-Sentigenix.debug.xcconfig"; sourceTree = "<group>"; };
+		F81450B74DB125E9D91AB2C0 /* Pods-Sentigenix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sentigenix.release.xcconfig"; path = "Target Support Files/Pods-Sentigenix/Pods-Sentigenix.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +94,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F9BEEB25024B5200E2EE21 /* SwifteriOS.framework in Frameworks */,
+				88ECCA27CAE9F4F7BD63879E /* Pods_Sentigenix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		149323EDE0BB0D26A6F8CD40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B60EA2E17ECF1E49B0960F0 /* Pods-Sentigenix.debug.xcconfig */,
+				F81450B74DB125E9D91AB2C0 /* Pods-Sentigenix.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55042F3E2502CF81003BB52F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				55042F3F2502CF97003BB52F /* Haptic Feedback.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		55F9BEB12501EDC000E2EE21 = {
 			isa = PBXGroup;
 			children = (
+				55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */,
 				55F9BEBC2501EDC100E2EE21 /* Sentigenix */,
 				55F9BEBB2501EDC100E2EE21 /* Products */,
+				55F9BEEA25024B5200E2EE21 /* Frameworks */,
+				149323EDE0BB0D26A6F8CD40 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +143,67 @@
 			children = (
 				55F9BEBD2501EDC100E2EE21 /* AppDelegate.swift */,
 				55F9BEBF2501EDC100E2EE21 /* SceneDelegate.swift */,
-				55F9BEC12501EDC100E2EE21 /* ViewController.swift */,
-				55F9BEC32501EDC100E2EE21 /* Main.storyboard */,
-				55F9BEC62501EDC200E2EE21 /* Assets.xcassets */,
-				55F9BEC82501EDC200E2EE21 /* LaunchScreen.storyboard */,
+				55042F3E2502CF81003BB52F /* Utils */,
+				55F9BED725021F6D00E2EE21 /* Supporting Files */,
+				55F9BED625021F5000E2EE21 /* ML Model */,
+				55F9BED525021F4900E2EE21 /* Controller */,
+				55F9BED425021F4300E2EE21 /* View */,
 				55F9BECB2501EDC200E2EE21 /* Info.plist */,
 			);
 			path = Sentigenix;
+			sourceTree = "<group>";
+		};
+		55F9BED425021F4300E2EE21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55F9BEC32501EDC100E2EE21 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55F9BED525021F4900E2EE21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55F9BEC12501EDC100E2EE21 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55F9BED625021F5000E2EE21 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				55F9BED125021F3400E2EE21 /* TweetSentimentIdentifier.mlmodel */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		55F9BED725021F6D00E2EE21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55F9BEC62501EDC200E2EE21 /* Assets.xcassets */,
+				55F9BEC82501EDC200E2EE21 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55F9BED925024B1700E2EE21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55F9BEE125024B1800E2EE21 /* SwifteriOS.framework */,
+				55F9BEE325024B1800E2EE21 /* SwifterMac.framework */,
+				55F9BEE525024B1800E2EE21 /* SwifterDemoiOS.app */,
+				55F9BEE725024B1800E2EE21 /* SwifterDemoMac.app */,
+				55F9BEE925024B1800E2EE21 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55F9BEEA25024B5200E2EE21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				454A7224E314EBF1CAD680D1 /* Pods_Sentigenix.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55F9BECE2501EDC200E2EE21 /* Build configuration list for PBXNativeTarget "Sentigenix" */;
 			buildPhases = (
+				FC4B437D7C580D10AE3796B5 /* [CP] Check Pods Manifest.lock */,
 				55F9BEB62501EDC100E2EE21 /* Sources */,
 				55F9BEB72501EDC100E2EE21 /* Frameworks */,
 				55F9BEB82501EDC100E2EE21 /* Resources */,
+				55F9BEED25024B5200E2EE21 /* Embed Frameworks */,
+				09CF5EE6E3D495724BB3C751 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +255,56 @@
 			mainGroup = 55F9BEB12501EDC000E2EE21;
 			productRefGroup = 55F9BEBB2501EDC100E2EE21 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55F9BED925024B1700E2EE21 /* Products */;
+					ProjectRef = 55F9BED825024B1700E2EE21 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				55F9BEB92501EDC100E2EE21 /* Sentigenix */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55F9BEE125024B1800E2EE21 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 55F9BEE025024B1800E2EE21 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55F9BEE325024B1800E2EE21 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 55F9BEE225024B1800E2EE21 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55F9BEE525024B1800E2EE21 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 55F9BEE425024B1800E2EE21 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55F9BEE725024B1800E2EE21 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 55F9BEE625024B1800E2EE21 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55F9BEE925024B1800E2EE21 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 55F9BEE825024B1800E2EE21 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		55F9BEB82501EDC100E2EE21 /* Resources */ = {
@@ -133,13 +319,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09CF5EE6E3D495724BB3C751 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentigenix/Pods-Sentigenix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sentigenix/Pods-Sentigenix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sentigenix/Pods-Sentigenix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC4B437D7C580D10AE3796B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sentigenix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55F9BEB62501EDC100E2EE21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F9BEC22501EDC100E2EE21 /* ViewController.swift in Sources */,
+				55F9BEC22501EDC100E2EE21 /* MainViewController.swift in Sources */,
+				55042F402502CF97003BB52F /* Haptic Feedback.swift in Sources */,
 				55F9BEBE2501EDC100E2EE21 /* AppDelegate.swift in Sources */,
+				55F9BED225021F3400E2EE21 /* TweetSentimentIdentifier.mlmodel in Sources */,
 				55F9BEC02501EDC100E2EE21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +512,7 @@
 		};
 		55F9BECF2501EDC200E2EE21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B60EA2E17ECF1E49B0960F0 /* Pods-Sentigenix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +531,7 @@
 		};
 		55F9BED02501EDC200E2EE21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F81450B74DB125E9D91AB2C0 /* Pods-Sentigenix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
