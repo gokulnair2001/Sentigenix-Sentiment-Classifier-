@@ -69,10 +69,17 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🎛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xY9-rs-5sv">
-                                <rect key="frame" x="356" y="138" width="45" height="32"/>
+                                <rect key="frame" x="134" y="391" width="147" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="63"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmP-WM-Fuf">
+                                <rect key="frame" x="80" y="556" width="254" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -80,8 +87,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="SearchTextField" destination="neU-Yp-mTx" id="BOD-Zs-nGu"/>
                         <outlet property="precictionLabel" destination="xY9-rs-5sv" id="3bj-wP-D5t"/>
-                        <outlet property="textField" destination="neU-Yp-mTx" id="BOD-Zs-nGu"/>
+                        <outlet property="precictionStatement" destination="JmP-WM-Fuf" id="TNe-ei-fF9"/>
                         <segue destination="foq-PJ-e5K" kind="showDetail" identifier="details" id="P47-5p-eIe"/>
                     </connections>
                 </viewController>

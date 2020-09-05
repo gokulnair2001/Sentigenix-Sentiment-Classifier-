@@ -15,32 +15,40 @@ class MainViewController: UIViewController {
     
    
     @IBOutlet weak var precictionLabel: UILabel!
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var SearchTextField: UITextField!
+    @IBOutlet weak var precictionStatement: UILabel!
     
     let sentimentAnalyser = TweetSentimentIdentifier()
     
     let tweetCount = 100
     
-    let swifter = Swifter(consumerKey: "w4f7LaNPGdikveanwkfrQTpgh", consumerSecret: "KsWZNHwPFpqKhriN6NaCvzBZwV36A6UIjhcwk4n7vSfBw3klay")
+    //Here use your own consumerkey and consumersecret key which you will get on signing up the twitter developer account
+    let swifter = Swifter(consumerKey: "", consumerSecret: "")
     
     let haptic = hapticfeedback()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        SearchTextField.delegate = self
+        precictionStatement.isHidden = true
+        precictionLabel.isHidden = true
     }
     
     @IBAction func predictionBtn(_ sender: Any) {
         
-        if textField.text != "" {
+        if SearchTextField.text != "" {
             parsingFunction()
-            textField.text = ""
+            SearchTextField.text = ""
             haptic.haptiFeedback1()
+    
+            
         } else{
-            let alert = UIAlertController(title: "Empty!", message: nil, preferredStyle: .alert)
+           /* let alert = UIAlertController(title: "Empty!", message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             
-            present(alert, animated: true)
+            present(alert, animated: true)*/
+            
+            SearchTextField.placeholder = "Type Something!"
         }
     }
     
@@ -61,7 +69,7 @@ extension MainViewController{
     
     func parsingFunction(){
         
-        swifter.searchTweet(using: textField.text!,lang: "en" ,count: tweetCount, tweetMode: .extended ,success: {(result, metadata) in
+        swifter.searchTweet(using: SearchTextField.text!,lang: "en" ,count: tweetCount, tweetMode: .extended ,success: {(result, metadata) in
             // print(result)
             
             var tweets = [TweetSentimentIdentifierInput]()
@@ -109,24 +117,27 @@ extension MainViewController: UITextFieldDelegate{
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         
-        if textField.text != "" {
+        if SearchTextField.text != "" {
             return true
         }else{
-            textField.placeholder = "Type Something"
+            SearchTextField.placeholder = "Type Something"
             return false
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.text != "" {
+        if SearchTextField.text != "" {
             parsingFunction()
         }
-        self.textField.text = ""
+        self.SearchTextField.text = ""
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
-        view.endEditing(true)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        SearchTextField.endEditing(true)
+        
+        return true
+        
     }
 }
 
@@ -136,27 +147,37 @@ extension MainViewController: UITextFieldDelegate{
 extension MainViewController{
     
     func predictionResult(Score: Int){
-    
+        
+        precictionStatement.isHidden = false
+        precictionLabel.isHidden = false
+        
         if Score > 90 {
             precictionLabel.text = "💯"
+            precictionStatement.text = "Must Invest"
         }
         else if Score > 70{
             precictionLabel.text = "⭐️"
+            precictionStatement.text = "Good to go"
         }
         else if Score > 40{
             precictionLabel.text = "😊"
+            precictionStatement.text = "Can Try"
         }
         else if Score > 10{
             precictionLabel.text = "😅"
+            precictionStatement.text = "Take Risk"
         }
         else if Score == 0{
             precictionLabel.text = "😐"
+            precictionStatement.text = "Ahhh..No comments"
         }
         else if Score > -10{
             precictionLabel.text = "❌"
+            precictionStatement.text = "Not now"
         }
         else if Score > -20{
             precictionLabel.text = "🛑"
+            precictionStatement.text = "never"
         }
     
     }
