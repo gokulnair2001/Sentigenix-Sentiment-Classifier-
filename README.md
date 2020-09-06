@@ -24,7 +24,7 @@ app would identify wether the following tweet is positive , negative or zero.
 * Clone or download the app from this repository. 👩‍💻
 * Open project file in terminal. 💻
 * Run pod intall to install all dependencies. 📥
-* Open the WTC!.workspace file. 💾
+* Open the Sentigenix.workspace file. 💾
 * Change the bundle Identifier. ⚙️
 * Press Ctrl + R to run the app. 📲
 * Do star this repo and/or contribute if you like it.🙂 
