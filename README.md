@@ -67,4 +67,4 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Senti
 
 * Will add graphs and various details so that the user experience get enhanced.
 * Make the UI more versatile.
-* add more API's so that the user can go through Youtube comments, insagram comments etc.
+* add more API's so that the user can go through Youtube comments, Insagram comments etc.
