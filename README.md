@@ -61,7 +61,7 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Senti
 
 * In this project I have removed my personal consumer key as well as consumer secret key, you can get your own by applying for twitter developer account, which normaly takes
 8-10 hrs to get activated.
-* Apply here [Twitter Developer account](https://developer.twitter.com/en) for consumer key and consumer secret key.
+* Apply here [Twitter Developer account](https://developer.twitter.com/en) for Consumer key and Consumer secret key.
 
 # Future Updates
 
