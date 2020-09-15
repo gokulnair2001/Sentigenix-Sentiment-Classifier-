@@ -16,8 +16,8 @@ This app is made to have a over look on a particular organisations tweeter page 
 
 # Introduction ⚒  
 
-Write your organisation's name with '@' before it so that our twitter API can parse through the tweets which contain '@(Comapnies)' name only.Then using a ML model the 
-app would identify wether the following tweet is positive , negative or zero.
+Write your organisation's name with '@' before it so that our twitter API can parse through the tweets which contain '@(Comapnies)' name only.Then using a ML model the app would identify wether the following tweet is positive , negative or zero.
+Even you can search for "#" too.
 
 # Steps to run 📲
 
