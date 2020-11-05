@@ -63,6 +63,11 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Senti
 8-10 hrs to get activated.
 * Apply here [Twitter Developer account](https://developer.twitter.com/en) for Consumer key and Consumer secret key.
 
+# Like the Project ?
+If you like Sentigenix please consider buying me a coffee 🥰
+
+[<img width="200" alt="BMC logo+wordmark - Black" src="https://user-images.githubusercontent.com/56252259/98195548-0c55fb80-1f48-11eb-8293-02131a0d908c.png">](https://www.buymeacoffee.com/gokulnair)
+
 # Future Updates
 
 * Will add graphs and various details so that the user experience get enhanced.
