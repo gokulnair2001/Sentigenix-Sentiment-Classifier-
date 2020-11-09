@@ -12,7 +12,7 @@
 
 # Inspiration ❤️
 
-This App is made to have a over look on a particular organisations tweeter page and to find what do people think of this organisation and should we invest in it or not.
+This app is made to have a over look on a particular organisations tweeter page and to find what do people think of this organisation and should we invest in it or not.
 
 # Introduction ⚒  
 
